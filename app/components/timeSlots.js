@@ -58,7 +58,8 @@ class TimeSlots extends React.Component {
         if(item.slot === this.state.modalTitle){
           item.name = this.nameValue.value;
           item.phone = this.phoneValue.value;
-          this.state.clicked.className = 'list-group-item list-group-item-danger';
+          let updateClicked = this.state.clicked;
+          updateClicked.className = 'list-group-item list-group-item-danger';
         }
         return item;
       }, this);
